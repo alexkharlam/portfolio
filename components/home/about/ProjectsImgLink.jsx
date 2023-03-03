@@ -11,6 +11,16 @@ function ProjectsImgLink() {
         See all projects
       </p>
       <Image
+        sizes="100vw,
+               (min-width: 640px) 616px,
+               (min-width: 768px) 360px,
+               (min-width: 1024px) 452px,
+               (min-width: 1280px) 580px,
+               (min-width: 1536px) 708px,
+
+               "
+        placeholder="blur"
+        blurDataURL="/reelrate.png"
         src="/reelrate.png"
         fill
         className="overflow:hidden animate-positionMove object-cover brightness-50 transition-all duration-500 group-hover:scale-125 group-hover:brightness-75"
