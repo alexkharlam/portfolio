@@ -9,7 +9,7 @@ function About() {
     <section className="flex flex-col gap-3 md:flex-row lg:gap-5">
       <div className="md:w-1/2">
         <p className="mb-3 text-4xl font-semibold">👋 Hello!</p>
-        <p className="mb-3.5">
+        <p className="mb-2">
           Welcome to my portfolio website, where you can explore pet projects I
           made and see info about me
         </p>
