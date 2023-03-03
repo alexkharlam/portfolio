@@ -20,7 +20,7 @@ function ProjectsImgLink() {
 
                "
         placeholder="blur"
-        blurDataURL="/reelrate.png"
+        blurDataURL="/reelratesmall.png"
         src="/reelrate.png"
         fill
         className="overflow:hidden animate-positionMove object-cover brightness-50 transition-all duration-500 group-hover:scale-125 group-hover:brightness-75"
