@@ -5,13 +5,17 @@ import { Sun } from "react-feather";
 function ThemeBtn() {
   const size = 32;
   const strokeWidth = 1.5;
-  const [isDarkTheme, setIsDarkTheme] = useState(false);
+  const [isDarkTheme, setIsDarkTheme] = useState(true);
+
+  useEffect(() => {
+    if (isDarkTheme === true)
+      document.querySelector("html").classList.add("dark");
+    if (isDarkTheme === false)
+      document.querySelector("html").classList.remove("dark");
+  }, [isDarkTheme]);
 
   const toggleTheme = function () {
     setIsDarkTheme((oldState) => !oldState);
-    document.querySelector("html").classList.toggle("dark");
-    // todo: instead of selectins element in the dom, use context/redux/mobX to control the state and change class of another element, to avoid dom manipulation.
-    localStorage.setItem("theme", "dark");
   };
 
   return (

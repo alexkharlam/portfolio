@@ -8,7 +8,7 @@ import LinkdedInLink from "../ui/contactLinks/LinkdedInLink";
 import ProjectsLink from "../ui/contactLinks/ProjectsLink";
 
 function HeaderNav() {
-  const iconSize = 32;
+  const iconSize = 24;
   const [menuActive, setMenuActive] = useState(false);
 
   const toggleMenu = function () {
@@ -22,7 +22,7 @@ function HeaderNav() {
           menuActive
             ? "translate-y-0 pointer-events-auto visible opacity-100"
             : "pointer-events-none invisible -translate-y-full opacity-0"
-        } absolute left-1/2 top-1/2 flex h-screen w-full -translate-x-1/2 -translate-y-1/2  transform flex-col items-center justify-center gap-3.5 bg-[#fff] transition-all duration-200 dark:bg-gray-800 md:pointer-events-auto md:visible md:relative md:left-auto md:top-auto  md:h-auto md:w-auto md:transform-none  md:flex-row md:opacity-100`}
+        } absolute left-1/2 top-1/2 flex h-screen w-full -translate-x-1/2 -translate-y-1/2  transform flex-col items-center justify-center gap-3.5 bg-[#fff] dark:bg-gray-800 md:pointer-events-auto md:visible md:relative md:left-auto md:top-auto  md:h-auto md:w-auto md:transform-none  md:flex-row md:opacity-100`}
       >
         <ProjectsLink size={iconSize} />
         <GitHubLink size={iconSize} />
