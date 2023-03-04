@@ -6,10 +6,10 @@ import TelegramLink from "../ui/contactLinks/TelegramLink";
 
 function Footer() {
   return (
-    <footer className="container mx-auto px-2 pb-3">
+    <footer className="container mx-auto px-2 py-3">
       {/* <p className="mb-3 text-3xl font-semibold">📃 Contacts</p> */}
       <nav className="">
-        <ul className="align-s grid justify-items-center sm:grid-cols-2 lg:grid-cols-5">
+        <ul className="grid justify-items-center sm:grid-cols-2 lg:grid-cols-5">
           <GitHubLink size={32} />
           <LinkdedInLink size={32} />
           <TelegramLink size={32} />
