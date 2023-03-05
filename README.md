@@ -1,6 +1,6 @@
 # Portfolio
 
-[Go to website](https://github.com)
+[Go to website](https://kharlam.space)
 
 ## This is a projects of my portfolio website.
 
