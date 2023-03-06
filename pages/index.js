@@ -1,4 +1,5 @@
 import Home from "@/components/home/Home";
+import TransitionMotion from "@/components/ui/TransitionMotion";
 import Head from "next/head";
 
 export default function IndexPage() {
@@ -11,7 +12,9 @@ export default function IndexPage() {
         />
         <title>Alex Khalramov | Frontend Developer</title>
       </Head>
-      <Home />
+      <TransitionMotion>
+        <Home />
+      </TransitionMotion>
     </>
   );
 }
