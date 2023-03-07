@@ -3,7 +3,7 @@ import { Moon } from "react-feather";
 import { Sun } from "react-feather";
 
 function ThemeBtn() {
-  const size = 32;
+  const iconSize = 32;
   const strokeWidth = 1.5;
   const [isDarkTheme, setIsDarkTheme] = useState(true);
 
@@ -23,7 +23,7 @@ function ThemeBtn() {
       <button onClick={toggleTheme} type="button" className="group">
         {isDarkTheme && (
           <Moon
-            size={size}
+            size={iconSize}
             strokeWidth={strokeWidth}
             className="transition-transform duration-300 group-hover:scale-110"
           />
@@ -31,7 +31,7 @@ function ThemeBtn() {
 
         {!isDarkTheme && (
           <Sun
-            size={size}
+            size={iconSize}
             strokeWidth={strokeWidth}
             className="transition-transform duration-300 group-hover:scale-110"
           />

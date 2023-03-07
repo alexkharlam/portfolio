@@ -4,10 +4,8 @@ import Head from "next/head";
 
 export default function IndexPage() {
   return (
-    <>
-      <TransitionMotion>
-        <Home />
-      </TransitionMotion>
-    </>
+    <TransitionMotion>
+      <Home />
+    </TransitionMotion>
   );
 }
