@@ -1,4 +1,5 @@
 import "@/styles/globals.css";
+import Head from "next/head";
 import { Open_Sans } from "next/font/google";
 import { AnimatePresence } from "framer-motion";
 
@@ -11,14 +12,24 @@ const openSans = Open_Sans({
 
 export default function App({ Component, pageProps }) {
   return (
-    <AnimatePresence mode="wait" initial={false}>
-      <div
-        className={`${openSans.variable} min-h-screen font-sans text-base text-gray-700  dark:bg-gray-800 dark:text-gray-100`}
-      >
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-      </div>
-    </AnimatePresence>
+    <>
+      <Head>
+        <meta
+          name="description"
+          content="Website, where you can see all of my portofolio projects and get to know who I am"
+        />
+        <title>Alex Khalramov | Frontend Developer</title>
+        <link rel="icon" href="/favicon_io/favicon.ico" />
+      </Head>
+      <AnimatePresence mode="wait" initial={false}>
+        <div
+          className={`${openSans.variable} min-h-screen font-sans text-base text-gray-700  dark:bg-gray-800 dark:text-gray-100`}
+        >
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </div>
+      </AnimatePresence>
+    </>
   );
 }
